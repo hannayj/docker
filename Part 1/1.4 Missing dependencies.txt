@@ -1,0 +1,13 @@
+> docker run -d --rm -it --name website ubuntu sh -c "echo 'Input website:'; read website; echo 'Searching..'; sleep 1; curl http://$website;"
+
+> docker exec -it website bash
+
+> apt-get update
+
+> apt-get -y install curl
+
+> curl helsinki.fi
+
+> exit
+
+> docker kill website
